@@ -1,9 +1,9 @@
 {
     "name": "Omni Veículos - Jira",
-    "manifest_version": 3,
-    "version": "0.0.2",
+    "manifest_version": 2,
+    "version": "0.0.3",
     "description": "Abre Card no Jira pelo numero",
-    "action": {
+    "browser_action": {
         "default_title": "Abrir Card:",
         "default_popup": "index.html"
     },
