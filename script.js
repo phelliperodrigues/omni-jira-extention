@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (navigator.clipboard) {
             navigator.clipboard.writeText(link).then(() => {
               console.log('Copied to clipboard successfully.');
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1000);
             }, (err) => {
               console.log('Failed to copy the text to clipboard.', err);
             });
